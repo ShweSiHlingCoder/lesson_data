@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* =========================================================
+　◆Basic
+========================================================= */
+html {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #fff;
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  line-height: 1.9em;
+  letter-spacing: 0.5px;
+}
+img {
+  display: block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+section {
+  width: 100%;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* -------------------
+        clear
+--------------------- */
+.cFix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  line-height: 0;
+  content: ".";
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* new end */
+.main-visual {
+  height: 98vh !important;
+  /* max-height: 1000px; */
+  color: #fff;
+  margin-top: 80px;
+}
+.main-visual .visual-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.main-visual .visual-content h2 {
+  padding-bottom: 25px;
+  font-size: 53.8px;
+  line-height: 1.5;
+  letter-spacing: 8px;
+}
+.mvbr {
+  display: none;
+}
+.main-visual .visual-content p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  animation-name: mvtextshow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes mvtextshow{
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

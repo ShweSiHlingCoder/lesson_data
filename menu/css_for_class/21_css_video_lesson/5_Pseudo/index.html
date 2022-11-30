@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        background: #ff8800;
+        color: #fff;
+        width: 400px;
+        line-height: 180px;
+        text-align: center;
+        transition: 1s;
+      }
+      h1:hover {
+        color: #000;
+        font-size: 45px;
+      }
+      h1:first-child {
+        border-radius: 10px;
+        color: #090;
+      }
+      h1:last-child {
+        border-radius: 50px 10px 50px 10px;
+        color: #900;
+      }
+      nav {
+       width: 1200px;
+      }
+      ul {
+       list-style: none;
+      }
+      li{
+       line-height: 45px;
+       background: #eee;
+       border-bottom: 1 px solid #ddd;
+       text-align: center;
+       width: 230px;
+       float: left;
+       box-shadow: 1px 0px red inset;
+      }
+      li:first-child{
+       box-shadow: 0px 0px red inset;
+      }
+      a {
+       text-decoration: none;
+      }
+      .clear {
+       clear: both;
+      }
+      li:nth-of-type(3) {
+      font-size: 25px;
+      }
+      li:last-child{
+       font-size: 20px;
+      }
+      li:nth-of-type(4) {
+       font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+   <nav>
+    <ul>
+     <li><a href="#">One</a></li>
+     <li><a href="#">Two</a></li>
+     <li><a href="#">Three</a></li>
+     <li><a href="#">Four</a></li>
+     <li><a href="#">Five</a></li>
+    </ul>
+   </nav>
+   <div class="clear"></div>
+    <h1>Hello First child</h1>
+    <h1>Hello Second Child</h1>
+    <h1>Hello Third Child</h1>
+    
+    
+  </body>
+</html>

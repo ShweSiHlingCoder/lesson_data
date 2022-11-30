@@ -1,0 +1,30 @@
+.first_layer {
+  border: 1px solid black;
+  background-color: yellow;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+  z-index: 3;
+}
+.second_layer {
+  border: 1px solid black;
+  background-color: skyblue;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  z-index: 3;
+}
+.third_layer {
+  border: 1px solid black;
+  background-color: red;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  left: 320px;
+  z-index: 3;
+}

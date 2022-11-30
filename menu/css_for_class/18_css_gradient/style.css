@@ -1,0 +1,9 @@
+#grad1 {
+ height: 100px;
+ /* background: linear-gradient(pink, gray
+ ); */
+ /* background: linear-gradient(to bottom right, pink green); */
+ width: 550px;
+ /* background: linear-gradient(red 5%, green 15%, pink 60%); */
+ background: repeating-radial-gradient(blue, yellow 10%, pink 60%);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mainvisual</title>
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/vegas.min.css">
+</head>
+<body>
+  <section class="main-visual">
+      <div class="visual-content">
+        <h2 class="typ">Welcome</h2>
+        <p>Mobile Legend Bang Bang</p>
+      </div>
+  </section><!-- main-visual -->
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/vegas.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function(){
+      // main visual
+      var my_w = $( window ).width();
+      $('.main-visual').vegas({
+        slides: [
+        { src: 'img/slider01.jpg' },
+        { src: 'img/slider02.jpg' },
+        { src: 'img/slider03.jpg' }
+        ],
+        firstTransition: 'fade',
+        delay: 3000,
+        timer: false,
+        transition: 'blur',
+        transitionDuration: 2000,
+        transition: 'blur'
+      });
+    });
+  </script>
+
+
+</html>

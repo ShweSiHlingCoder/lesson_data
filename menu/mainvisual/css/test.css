@@ -1,0 +1,18 @@
+.img-gp {
+  justify-content: stretch;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  img {
+    width: 49%;
+  }
+  .img-gp {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}

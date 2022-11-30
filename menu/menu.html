@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">Portfolio</h1>
+        </div>
+    </nav>
+     <section class="main-visual">
+      <div class="visual-content">
+        <h2 class="typ">Welcome</h2>
+        <p>Mobile Legend Bang Bang</p>
+      </div>
+  </section>
+  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/vegas.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function(){
+      // main visual
+      var my_w = $( window ).width();
+      $('.main-visual').vegas({
+        slides: [
+        { src: 'img/slider01.jpg' },
+        { src: 'img/slider02.jpg' },
+        { src: 'img/slider03.jpg' }
+        ],
+        firstTransition: 'fade',
+        delay: 3000,
+        timer: false,
+        transition: 'blur',
+        transitionDuration: 2000,
+        transition: 'blur'
+      });
+    });
+  </script>
+</html>
